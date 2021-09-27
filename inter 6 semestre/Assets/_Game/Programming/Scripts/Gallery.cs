@@ -15,7 +15,7 @@ public class Gallery : MonoBehaviour
 
     private void Update()
     {
-        pictures = Resources.LoadAll("/Pictures");
+        pictures = Resources.LoadAll("/Pictures/");
     }
 
     public void NextImage()
