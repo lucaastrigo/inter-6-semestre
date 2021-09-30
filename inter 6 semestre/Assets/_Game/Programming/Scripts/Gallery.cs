@@ -6,45 +6,74 @@ using System.IO;
 
 public class Gallery : MonoBehaviour
 {
-    public Object[] pictures;
+    public static Gallery value;
+
+    [SerializeField]
+    List<Texture2D> pics = new List<Texture2D>();
 
     [SerializeField] GameObject panel;
 
-    string[] files = null;
     int screenshotShown = 0;
 
-    private void Update()
+    public void SavePic(Texture2D texture2D)
     {
-        pictures = Resources.LoadAll("/Pictures/");
+        //add 'texture2D' to 'pictures' list
+
+        pics.Add(texture2D);
     }
 
     public void NextImage()
     {
-        if(files.Length > 0)
+        if(pics.Count > 1)
         {
             ++screenshotShown;
 
-            if(screenshotShown > files.Length - 1)
+            if(screenshotShown > pics.Count)
             {
                 screenshotShown = 0;
             }
 
-            //GetPicture();
+            GetPicture();
         }
+
+        //if(pictures.Length > 0)
+        //{
+        //    ++screenshotShown;
+
+        //    if(screenshotShown > pictures.Length - 1)
+        //    {
+        //        screenshotShown = 0;
+        //    }
+        //}
     }
 
     public void PreviousImage()
     {
-        if(files.Length > 0)
+        if(pics.Count > 1)
         {
             --screenshotShown;
 
-            if(screenshotShown < 0)
+            if(screenshotShown < 1)
             {
-                screenshotShown = files.Length - 1;
+                screenshotShown = pics.Count;
             }
 
-            //GetPicture();
+            GetPicture();
         }
+
+        //if(pictures.Length > 0)
+        //{
+        //    --screenshotShown;
+
+        //    if(screenshotShown < 0)
+        //    {
+        //        screenshotShown = pictures.Length - 1;
+        //    }
+        //}
+    }
+
+    void GetPicture()
+    {
+        //
     }
 }

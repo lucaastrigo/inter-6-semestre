@@ -39,17 +39,16 @@ public class Photograph : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
 
-        int l = 0;
-
         Texture2D texture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         texture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         texture.Apply();
+
+        //Gallery.value.SavePic(texture);
 
         string fileName = "Screenshot" + System.DateTime.Now.ToString("dd-MMM-yyyy_HH-mm-ss") + ".png";
 
         byte[] bytes = texture.EncodeToPNG();
         File.WriteAllBytes(Application.dataPath + "/_Game/Resources/Pictures/" + fileName, bytes);
-
         Destroy(texture);
     }
 }
