@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Game/OTHER/LowPolyInterior_Demo/LowPolyInterior_Demo.unity
+    path: Assets/_Game/Scenes/JOGO.unity
     guid: be7da2d78e467814186fe24a4e542b91
   m_configObjects: {}
