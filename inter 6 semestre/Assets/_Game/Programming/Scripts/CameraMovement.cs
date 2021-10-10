@@ -5,13 +5,55 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public void SelectCamera(GameObject toActivate, GameObject[] toDeactivate)
-    {
-        toActivate.SetActive(true);
+    public enum cam {upCam, leftCam, downCam, rightCam}
+    public cam camCode1, camCode2;
 
-        for (int i = 0; i < toDeactivate.Length; i++)
+    public GameObject up, left, down, right;
+
+    private void Update()
+    {
+        if(camCode1 != cam.upCam && camCode2 != cam.upCam)
         {
-            toDeactivate[i].SetActive(false);
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                up.SetActive(true);
+                left.SetActive(false);
+                down.SetActive(false);
+                right.SetActive(false);
+            }
+        }
+
+        if(camCode1 != cam.leftCam && camCode2 != cam.leftCam)
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                up.SetActive(false);
+                left.SetActive(true);
+                down.SetActive(false);
+                right.SetActive(false);
+            }
+        }
+
+        if(camCode1 != cam.downCam && camCode2 != cam.downCam)
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                up.SetActive(false);
+                left.SetActive(false);
+                down.SetActive(true);
+                right.SetActive(false);
+            }
+        }
+
+        if(camCode1 != cam.rightCam && camCode2 != cam.rightCam)
+        {
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                up.SetActive(false);
+                left.SetActive(false);
+                down.SetActive(false);
+                right.SetActive(true);
+            }
         }
     }
 }

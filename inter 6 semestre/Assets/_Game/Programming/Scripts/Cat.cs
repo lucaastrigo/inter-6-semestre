@@ -5,29 +5,17 @@ using UnityEngine;
 
 public class Cat : MonoBehaviour
 {
-    public float speed;
-
     Animator anim;
-    NavMeshAgent agent;
-    Transform target;
+    Rigidbody rb;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        agent = GetComponent<NavMeshAgent>();
+        rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    public void Jump(float jumpForce)
     {
-        if(target != null)
-        {
-            //
-        }
-    }
-
-    public void FollowLaser(Vector3 laserTarget)
-    {
-        target.position = laserTarget;
-        agent.SetDestination(laserTarget);
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Force);
     }
 }
