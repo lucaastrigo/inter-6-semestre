@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class InteractiveObject : MonoBehaviour
 {
+    public Transform target;
     public UnityEvent action;
 
     GameObject cat;
@@ -16,6 +17,7 @@ public class InteractiveObject : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        cat.transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime);
         action.Invoke();
     }
 }
