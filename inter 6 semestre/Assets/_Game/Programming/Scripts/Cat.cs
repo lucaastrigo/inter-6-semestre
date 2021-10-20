@@ -18,4 +18,15 @@ public class Cat : MonoBehaviour
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Force);
     }
+
+    public void Run(Transform target)
+    {
+        transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime);
+    }
+
+    public void No()
+    {
+        //anim.SetTrigger("no");
+        print("can't go there");
+    }
 }
