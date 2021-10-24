@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class Cat : MonoBehaviour
 {
+    public float speed, jumpForce;
+
+    float xMove, zMove;
+    bool canJump;
     Animator anim;
     Rigidbody rb;
 
@@ -14,19 +18,32 @@ public class Cat : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    public void Jump(float jumpForce)
+    private void FixedUpdate()
+    {
+        xMove = Input.GetAxis("Vertical");
+        zMove = Input.GetAxis("Horizontal");
+
+        rb.velocity = new Vector3(-xMove * speed * Time.deltaTime, 0, zMove * speed * Time.deltaTime);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+    }
+
+    void Jump()
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Force);
     }
 
-    public void Run(Transform target)
+    private void OnCollisionEnter(Collision collision)
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime);
-    }
-
-    public void No()
-    {
-        //anim.SetTrigger("no");
-        print("can't go there");
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            canJump = true;
+        }
     }
 }

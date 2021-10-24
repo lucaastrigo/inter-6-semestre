@@ -22,8 +22,8 @@ public class InteractiveObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-        cat.transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime);
+        //cat.transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime);
 
-        action.Invoke();
+        //action.Invoke();
     }
 }

@@ -8530,7 +8530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &502949735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16823,7 +16823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1036313614
 Transform:
   m_ObjectHideFlags: 0
@@ -16954,7 +16954,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036313613}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b6b578111c2f5f4f92876ef4a5da1db, type: 3}
   m_Name: 
@@ -32707,6 +32707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d61b7f5db30689439297be592d17801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
+  jumpForce: 50
 --- !u!54 &294048055662534650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32721,7 +32723,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &294048055662534651
 CapsuleCollider:
