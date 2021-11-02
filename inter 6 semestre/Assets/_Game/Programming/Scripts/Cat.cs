@@ -23,12 +23,12 @@ public class Cat : MonoBehaviour
         xMove = Input.GetAxis("Vertical");
         zMove = Input.GetAxis("Horizontal");
 
-        rb.velocity = new Vector3(-xMove * speed * Time.deltaTime, 0, zMove * speed * Time.deltaTime);
+        rb.velocity = new Vector3(-xMove * speed * Time.deltaTime, rb.velocity.y, zMove * speed * Time.deltaTime);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
             Jump();
         }
@@ -37,6 +37,8 @@ public class Cat : MonoBehaviour
     void Jump()
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Force);
+
+        canJump = false;
     }
 
     private void OnCollisionEnter(Collision collision)
