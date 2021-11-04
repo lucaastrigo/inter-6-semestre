@@ -12,4 +12,12 @@ public class Neighbor : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            print("vizinho pegou");
+        }
+    }
 }
