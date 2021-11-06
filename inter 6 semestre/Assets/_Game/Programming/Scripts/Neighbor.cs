@@ -8,9 +8,12 @@ public class Neighbor : MonoBehaviour
 
     [HideInInspector] public Animator anim;
 
+    Camerinha camerinha;
+
     void Start()
     {
         anim = GetComponent<Animator>();
+        camerinha = GameObject.FindGameObjectWithTag("Camera").GetComponent<Camerinha>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -18,6 +21,7 @@ public class Neighbor : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             print("vizinho pegou");
+            camerinha.anim.SetTrigger("vizinho");
         }
     }
 }

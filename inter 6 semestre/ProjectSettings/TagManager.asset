@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Invisible
   - Floor
+  - Camera
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Cat
   - Water
   - UI
   - Invisible
