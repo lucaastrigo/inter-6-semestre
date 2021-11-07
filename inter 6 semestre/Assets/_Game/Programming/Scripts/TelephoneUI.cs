@@ -6,18 +6,25 @@ public class TelephoneUI : MonoBehaviour
 {
     public GameObject[] neighbors;
 
+    Relogio relogio;
+
     private void Start()
     {
-        //
+        relogio = GameObject.FindGameObjectWithTag("Relogio").GetComponent<Relogio>();
     }
 
     public void CallNeighbor(int code)
     {
-        for (int i = 0; i < neighbors.Length; i++)
+        if(relogio.actions > 0)
         {
-            if(neighbors[i].GetComponent<Neighbor>().neighborCode == code)
+            --relogio.actions;
+
+            for (int i = 0; i < neighbors.Length; i++)
             {
-                neighbors[i].GetComponent<Neighbor>().anim.SetTrigger("telephone");
+                if (neighbors[i].GetComponent<Neighbor>().neighborCode == code)
+                {
+                    neighbors[i].GetComponent<Neighbor>().anim.SetTrigger("telephone");
+                }
             }
         }
     }
