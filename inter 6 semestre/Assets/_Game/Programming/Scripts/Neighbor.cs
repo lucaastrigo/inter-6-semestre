@@ -22,6 +22,7 @@ public class Neighbor : MonoBehaviour
         {
             print("vizinho pegou");
             camerinha.anim.SetTrigger("vizinho");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Flagra1");
         }
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{2dd71488-49e5-40b7-9f73-8a6a713c4063}">
+		<property name="assetPath">
+			<value>VidroQuebrando.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7606250000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b5a735b0-a6c9-4a90-b911-884efe469668}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -10,6 +10,7 @@ public class Camerinha : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/AmbienteCidade", GetComponent<Transform>().position);
     }
 
     public void FadeOut()

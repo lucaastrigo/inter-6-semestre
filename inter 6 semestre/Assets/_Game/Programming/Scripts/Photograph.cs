@@ -44,11 +44,12 @@ public class Photograph : MonoBehaviour
         texture.Apply();
 
         //Gallery.value.SavePic(texture);
-
         string fileName = "Screenshot" + System.DateTime.Now.ToString("dd-MMM-yyyy_HH-mm-ss") + ".png";
 
         byte[] bytes = texture.EncodeToPNG();
         File.WriteAllBytes(Application.dataPath + "/_Game/Resources/Pictures/" + fileName, bytes);
         Destroy(texture);
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Foto1");
     }
 }
