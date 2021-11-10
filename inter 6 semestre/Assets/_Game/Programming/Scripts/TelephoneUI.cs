@@ -17,7 +17,6 @@ public class TelephoneUI : MonoBehaviour
     {
         if(relogio.actions > 0)
         {
-            //som
             --relogio.actions;
 
             for (int i = 0; i < neighbors.Length; i++)
