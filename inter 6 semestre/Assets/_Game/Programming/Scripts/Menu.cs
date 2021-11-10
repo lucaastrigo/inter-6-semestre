@@ -6,30 +6,14 @@ using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
-    public GameObject pauseMenu, UIElements;
+    public GameObject pauseMenu;
 
     bool paused;
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!paused)
-            {
-                Pause();
-            }
-            else
-            {
-                Resume();
-            }
-        }
-    }
 
     public void Pause()
     {
         paused = true;
         pauseMenu.SetActive(true);
-        UIElements.SetActive(false);
         Time.timeScale = 0;
     }
 
@@ -37,7 +21,6 @@ public class Menu : MonoBehaviour
     {
         paused = false;
         pauseMenu.SetActive(false);
-        UIElements.SetActive(true);
         Time.timeScale = 1;
     }
 
