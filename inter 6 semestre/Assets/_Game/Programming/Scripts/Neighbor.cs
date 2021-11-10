@@ -20,7 +20,6 @@ public class Neighbor : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            print("vizinho pegou");
             camerinha.anim.SetTrigger("vizinho");
             FMODUnity.RuntimeManager.PlayOneShot("event:/Flagra1");
         }

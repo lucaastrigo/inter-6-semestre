@@ -5,16 +5,17 @@ using UnityEngine;
 public class Pista : MonoBehaviour
 {
     [HideInInspector] public bool visible;
+    [HideInInspector] public bool fotografado;
+
+    public int codigoPista;
 
     private void OnBecameVisible()
     {
-        print("pista visivel na tela");
         visible = true;
     }
 
     private void OnBecameInvisible()
     {
-        print("pista INVISIVEL");
         visible = false;
     }
 }
