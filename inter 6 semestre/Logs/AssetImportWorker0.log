@@ -542,3 +542,45 @@ Received Import Request.
 Start importing Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset using Guid(69e016ca94e72ca40a4143f279d3aa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db8a466c06066b8a0da4082d09db9690') in 0.116002 seconds
   Import took 0.247302 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002997 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.061 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 3264.
+Total: 3.075700 ms (FindLiveObjects: 0.261600 ms CreateObjectMapping: 0.183200 ms MarkObjects: 2.559300 ms  DeleteObjects: 0.069800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003569 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 3267.
+Total: 2.448200 ms (FindLiveObjects: 0.362700 ms CreateObjectMapping: 0.142200 ms MarkObjects: 1.906200 ms  DeleteObjects: 0.035300 ms)
+
