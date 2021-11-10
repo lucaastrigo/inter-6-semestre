@@ -10,7 +10,11 @@ public class PistaCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Floor"))
         {
-            Instantiate(pista, transform.position, Quaternion.identity);
+            //Instantiate(pista, transform.position, Quaternion.identity);
+
+            //gambiarra
+            pista.SetActive(true);
+
             Instantiate(restos, transform.position, Quaternion.identity);
 
             Destroy(gameObject.transform.parent.gameObject);

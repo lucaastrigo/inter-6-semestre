@@ -6,13 +6,17 @@ public class Neighbor : MonoBehaviour
 {
     public int neighborCode;
 
-    [HideInInspector] public Animator anim;
+    public Animator anim;
 
     Camerinha camerinha;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        if(anim == null)
+        {
+            anim = GetComponent<Animator>();
+        }
+
         camerinha = GameObject.FindGameObjectWithTag("Camera").GetComponent<Camerinha>();
     }
 

@@ -9,6 +9,12 @@ public class Photograph : MonoBehaviour
     public GameObject cadernoPistas;
 
     GameObject[] pistasVisiveis;
+    Relogio relogio;
+
+    private void Start()
+    {
+        relogio = GameObject.FindGameObjectWithTag("Relogio").GetComponent<Relogio>();
+    }
 
     private void Update()
     {
@@ -16,11 +22,15 @@ public class Photograph : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            for (int i = 0; i < pistasVisiveis.Length; i++)
+            if(relogio.actions > 0)
             {
-                if (pistasVisiveis[i].GetComponent<Pista>().visible && !pistasVisiveis[i].GetComponent<Pista>().fotografado)
+                for (int i = 0; i < pistasVisiveis.Length; i++)
                 {
-                    cadernoPistas.GetComponent<CadernoPistas>().AtivaPista(pistasVisiveis[i].GetComponent<Pista>().codigoPista);
+                    if (pistasVisiveis[i].GetComponent<Pista>().visible && !pistasVisiveis[i].GetComponent<Pista>().fotografado)
+                    {
+                        --relogio.actions;
+                        cadernoPistas.GetComponent<CadernoPistas>().AtivaPista(pistasVisiveis[i].GetComponent<Pista>().codigoPista);
+                    }
                 }
             }
         }
