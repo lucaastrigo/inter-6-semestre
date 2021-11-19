@@ -9,6 +9,7 @@ public class Relogio : MonoBehaviour
     public int actions;
     public Image relogioPreenchido;
     public RectTransform relogioSeta;
+    public GameObject agradecimentos;
 
     private void Start()
     {
@@ -22,5 +23,10 @@ public class Relogio : MonoBehaviour
 
         float rotacaoSeta = -360 + (float)actions * 90;
         relogioSeta.eulerAngles = new Vector3(0, 0, rotacaoSeta);
+    }
+
+    public void Agradece()
+    {
+        agradecimentos.SetActive(true);
     }
 }

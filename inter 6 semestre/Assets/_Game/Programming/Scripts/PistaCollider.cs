@@ -8,7 +8,7 @@ public class PistaCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (!collision.gameObject.CompareTag("Player"))
         {
             //Instantiate(pista, transform.position, Quaternion.identity);
 

@@ -30,6 +30,7 @@ public class Photograph : MonoBehaviour
                     {
                         --relogio.actions;
                         cadernoPistas.GetComponent<CadernoPistas>().AtivaPista(pistasVisiveis[i].GetComponent<Pista>().codigoPista);
+                        break;
                     }
                 }
             }
