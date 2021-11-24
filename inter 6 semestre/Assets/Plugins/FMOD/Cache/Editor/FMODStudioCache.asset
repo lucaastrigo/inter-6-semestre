@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../Inter6FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637720894971355085
+  lastModified: 637720918161043541
   FileSizes:
   - Name: Desktop
     Value: 1012
@@ -213,7 +213,7 @@ MonoBehaviour:
   Path: ../Inter6FMOD/Build/Desktop/Vizinho.bank
   Name: Vizinho
   StudioPath: bank:/Vizinho
-  lastModified: 637720894971640448
+  lastModified: 637720918161553804
   FileSizes:
   - Name: Desktop
     Value: 1263072
@@ -451,7 +451,7 @@ MonoBehaviour:
   Path: ../Inter6FMOD/Build/Desktop/Environment.bank
   Name: Environment
   StudioPath: bank:/Environment
-  lastModified: 637720894971152861
+  lastModified: 637720918160493417
   FileSizes:
   - Name: Desktop
     Value: 1948384
@@ -491,7 +491,7 @@ MonoBehaviour:
   - {fileID: -8590641788178932069}
   StringsBanks:
   - {fileID: 8982306593308246406}
-  stringsBankWriteTime: 637720894971365063
+  stringsBankWriteTime: 637720918161213581
   cacheVersion: 8
 --- !u!114 &88572293494459684
 MonoBehaviour:
@@ -683,7 +683,7 @@ MonoBehaviour:
   Path: ../Inter6FMOD/Build/Desktop/Gato.bank
   Name: Gato
   StudioPath: bank:/Gato
-  lastModified: 637720894971335132
+  lastModified: 637720918160873500
   FileSizes:
   - Name: Desktop
     Value: 80640
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   Path: ../Inter6FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637720894971365063
+  lastModified: 637720918161213581
   FileSizes:
   - Name: Desktop
     Value: 1314
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   Path: "../Inter6FMOD/Build/Desktop/A\xE7\xF5es.bank"
   Name: "A\xE7\xF5es"
   StudioPath: "bank:/A\xE7\xF5es"
-  lastModified: 637720894970908944
+  lastModified: 637720918160113331
   FileSizes:
   - Name: Desktop
     Value: 132992
