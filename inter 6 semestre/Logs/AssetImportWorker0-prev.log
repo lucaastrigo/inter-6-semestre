@@ -1,0 +1,201 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16319 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Lucas/Unity/PROJETOS/Faculdade/inter-6-semestre/inter 6 semestre
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60751
+Successfully changed project path to: D:/Lucas/Unity/PROJETOS/Faculdade/inter-6-semestre/inter 6 semestre
+D:/Lucas/Unity/PROJETOS/Faculdade/inter-6-semestre/inter 6 semestre
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 69.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Lucas/Unity/PROJETOS/Faculdade/inter-6-semestre/inter 6 semestre/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002172 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 64.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.068 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002666 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 75.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.941 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2942 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.6 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 101 unused Assets to reduce memory usage. Loaded Objects now: 3301.
+Total: 3.709200 ms (FindLiveObjects: 0.396400 ms CreateObjectMapping: 0.079700 ms MarkObjects: 1.755000 ms  DeleteObjects: 1.477100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/_Game/Art/2D/UI
+  artifactKey: Guid(d8f3065c3bed127408cc915b9251ae70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI using Guid(d8f3065c3bed127408cc915b9251ae70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619e302677eefb4d194b71c405fcd6bf') in 0.010563 seconds
+  Import took 0.033332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.541431 seconds.
+  path: Assets/_Game/Art/2D/UI/cadernof_folha.png
+  artifactKey: Guid(d38d360a5c3263e40823999f8025cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/cadernof_folha.png using Guid(d38d360a5c3263e40823999f8025cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349670226291895029335afc2b682675') in 0.073363 seconds
+  Import took 0.078246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/_Game/Art/2D/UI/fita.png
+  artifactKey: Guid(281d89c078aebd24d85832a9f8f2b8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/fita.png using Guid(281d89c078aebd24d85832a9f8f2b8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d48c6cffa24f9eab35fde9f23abcc34') in 0.010013 seconds
+  Import took 0.014793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/_Game/Art/2D/UI/cadernof_fundo.png
+  artifactKey: Guid(95c90f5dadaf8df4b928121308d34efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/cadernof_fundo.png using Guid(95c90f5dadaf8df4b928121308d34efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd72f437052d31eaacd012d76a0f9d5') in 0.009644 seconds
+  Import took 0.013860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.662185 seconds.
+  path: Assets/_Game/Art/2D/UI/cadernof_folha.png
+  artifactKey: Guid(d38d360a5c3263e40823999f8025cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/cadernof_folha.png using Guid(d38d360a5c3263e40823999f8025cfaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa010f116dadd1557d857e469a56022') in 0.050578 seconds
+  Import took 0.055472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/_Game/Art/2D/UI/fita.png
+  artifactKey: Guid(281d89c078aebd24d85832a9f8f2b8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/fita.png using Guid(281d89c078aebd24d85832a9f8f2b8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7f6b7ff4550ff8e0b48351d5ffb636') in 0.013216 seconds
+  Import took 0.017296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/_Game/Art/2D/UI/cadernof_fundo.png
+  artifactKey: Guid(95c90f5dadaf8df4b928121308d34efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/cadernof_fundo.png using Guid(95c90f5dadaf8df4b928121308d34efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1505da99fb57275b159f465b5492657e') in 0.025198 seconds
+  Import took 0.029562 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002980 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.9 MB.
+System memory in use after: 142.3 MB.
+
+Unloading 95 unused Assets to reduce memory usage. Loaded Objects now: 3313.
+Total: 3.478800 ms (FindLiveObjects: 0.359400 ms CreateObjectMapping: 0.078800 ms MarkObjects: 1.761100 ms  DeleteObjects: 1.278700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1630.315384 seconds.
+  path: Assets/_Game/Art/2D/UI/b.png
+  artifactKey: Guid(d8937ca512e652d419cd093855ae4dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/b.png using Guid(d8937ca512e652d419cd093855ae4dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caaae7eabb9ba19a411d1b61c2eb6022') in 0.049637 seconds
+  Import took 0.055014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/_Game/Art/2D/UI/c.png
+  artifactKey: Guid(d6a9b5d10148c5841ac62380b0cc06fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/c.png using Guid(d6a9b5d10148c5841ac62380b0cc06fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90235e498cc8c2876e407e950542abd4') in 0.010256 seconds
+  Import took 0.014505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/_Game/Art/2D/UI/Imagem2.png
+  artifactKey: Guid(59b1a8025b495ad4da6cb7a9fd0034bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/Imagem2.png using Guid(59b1a8025b495ad4da6cb7a9fd0034bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4af9ece4f94e6a52ae26fb57da26d6f') in 0.023454 seconds
+  Import took 0.027662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.567049 seconds.
+  path: Assets/_Game/Art/2D/UI/b.png
+  artifactKey: Guid(d8937ca512e652d419cd093855ae4dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/b.png using Guid(d8937ca512e652d419cd093855ae4dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f23fd40ac5efb3aaa1c1dff6f9c16dd') in 0.054898 seconds
+  Import took 0.060581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/_Game/Art/2D/UI/c.png
+  artifactKey: Guid(d6a9b5d10148c5841ac62380b0cc06fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/c.png using Guid(d6a9b5d10148c5841ac62380b0cc06fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89684f22daa24a82020f8c7b22b6c2b1') in 0.041219 seconds
+  Import took 0.045743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/_Game/Art/2D/UI/Imagem2.png
+  artifactKey: Guid(59b1a8025b495ad4da6cb7a9fd0034bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Game/Art/2D/UI/Imagem2.png using Guid(59b1a8025b495ad4da6cb7a9fd0034bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f85a887221f3dc3a9ed40e06721adea') in 0.032871 seconds
+  Import took 0.037206 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
