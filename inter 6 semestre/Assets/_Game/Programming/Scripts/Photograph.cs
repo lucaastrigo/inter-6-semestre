@@ -63,6 +63,7 @@ public class Photograph : MonoBehaviour
                 {
                     --relogio.actions;
                     cadernoPistas.GetComponent<CadernoPistas>().AtivaPista(pistasVisiveis[i].GetComponent<Pista>().codigoPista);
+                    pistasVisiveis[i].GetComponent<Pista>().fotografado = true;
                     vfxFlash.SetTrigger("photo");
                     break;
                 }

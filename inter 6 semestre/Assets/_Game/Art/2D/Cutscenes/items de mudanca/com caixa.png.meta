@@ -163,27 +163,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: com caixa_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 123
-        width: 20
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 881df0fbe51e46240800000000000000
-      internalID: 4784196501222969736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: com caixa_1
       rect:
         serializedVersion: 2
@@ -192,7 +171,7 @@ TextureImporter:
         width: 1362
         height: 843
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,27 +179,6 @@ TextureImporter:
       bones: []
       spriteID: eca11be35410df9f0800000000000000
       internalID: -433188592241534258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: com caixa_2
-      rect:
-        serializedVersion: 2
-        x: 1441
-        y: 123
-        width: 20
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92cdb9c187d8ad890800000000000000
-      internalID: -7432472688006013911
       vertices: []
       indices: 
       edges: []
@@ -234,7 +192,7 @@ TextureImporter:
         width: 1362
         height: 843
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,27 +200,6 @@ TextureImporter:
       bones: []
       spriteID: 0bb8b63b399af7b90800000000000000
       internalID: -7241883223953011792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: com caixa_4
-      rect:
-        serializedVersion: 2
-        x: 2881
-        y: 123
-        width: 20
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d47a5eb123ce7d980800000000000000
-      internalID: -8514076870560078003
       vertices: []
       indices: 
       edges: []
@@ -276,7 +213,7 @@ TextureImporter:
         width: 1362
         height: 843
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,27 +221,6 @@ TextureImporter:
       bones: []
       spriteID: 52cb8bab0d7e199b0800000000000000
       internalID: -5075020421397955547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: com caixa_6
-      rect:
-        serializedVersion: 2
-        x: 4322
-        y: 123
-        width: 20
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d61b47296836bfe90800000000000000
-      internalID: -6990884566928674451
       vertices: []
       indices: 
       edges: []
@@ -318,7 +234,7 @@ TextureImporter:
         width: 1362
         height: 843
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
