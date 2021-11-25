@@ -8,6 +8,12 @@ public class Pista : MonoBehaviour
     [HideInInspector] public bool fotografado;
 
     public int codigoPista;
+    public GameObject semFotoFX;
+
+    private void Update()
+    {
+        semFotoFX.SetActive(!fotografado);
+    }
 
     private void OnBecameVisible()
     {

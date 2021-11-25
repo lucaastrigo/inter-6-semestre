@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PistaCollider : MonoBehaviour
 {
-    public GameObject pista, restos;
+    public GameObject pista;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -14,8 +14,6 @@ public class PistaCollider : MonoBehaviour
 
             //gambiarra
             pista.SetActive(true);
-
-            Instantiate(restos, transform.position, Quaternion.identity);
 
             Destroy(gameObject.transform.parent.gameObject);
         }
