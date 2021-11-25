@@ -8,7 +8,6 @@ public class Camerinha : MonoBehaviour
     [HideInInspector] public Animator anim;
 
     public GameObject gato;
-    public Vector3 offset;
 
     void Start()
     {
@@ -22,7 +21,24 @@ public class Camerinha : MonoBehaviour
         {
             Vector3 gatoPos = gato.transform.position;
             gatoPos.x = transform.position.x;
-            transform.position = gatoPos + offset;
+
+            if(gato.GetComponent<Cat>() != null)
+            {
+                switch (gato.GetComponent<Cat>().andarAtual)
+                {
+                    case 0:
+                        gatoPos.y = 2.25f;
+                        break;
+                    case 1:
+                        gatoPos.y = 4.62f;
+                        break;
+                    case 2:
+                        gatoPos.y = 7;
+                        break;
+                }
+            }
+
+            transform.position = gatoPos;
         }
     }
 

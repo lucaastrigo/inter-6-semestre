@@ -10,6 +10,7 @@ TagManager:
   - Pista
   - Relogio
   - Cam
+  - Andar
   layers:
   - Default
   - TransparentFX

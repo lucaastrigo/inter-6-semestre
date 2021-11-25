@@ -7,6 +7,7 @@ public class Cat : MonoBehaviour
 {
     public float speed, jumpForce;
 
+    [HideInInspector] public int andarAtual;
     float xMove, zMove;
     bool canJump;
     Animator anim;
@@ -46,6 +47,14 @@ public class Cat : MonoBehaviour
         if (collision.gameObject.CompareTag("Floor"))
         {
             canJump = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Andar") && other.GetComponent<AreaAndar>() != null)
+        {
+            andarAtual = other.GetComponent<AreaAndar>().andar;
         }
     }
 }
