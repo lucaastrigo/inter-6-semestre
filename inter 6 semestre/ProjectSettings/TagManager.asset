@@ -11,6 +11,7 @@ TagManager:
   - Relogio
   - Cam
   - Andar
+  - Vizinho
   layers:
   - Default
   - TransparentFX

@@ -41,9 +41,4 @@ public class Camerinha : MonoBehaviour
             transform.position = gatoPos;
         }
     }
-
-    public void FadeOut()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
 }

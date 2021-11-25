@@ -8,6 +8,7 @@ public class Photograph : MonoBehaviour
 {
     public GameObject cadernoPistas;
     public GameObject photobutton;
+    public GameObject notification;
     public Animator vfxFlash;
 
     GameObject[] pistasVisiveis;
@@ -24,7 +25,7 @@ public class Photograph : MonoBehaviour
 
         for (int i = 0; i < pistasVisiveis.Length; i++)
         {
-            if (pistasVisiveis[i].GetComponent<Pista>().visible && !pistasVisiveis[i].GetComponent<Pista>().fotografado)
+            if (!pistasVisiveis[i].GetComponent<Pista>().fotografado) // && pistasVisiveis[i].GetComponent<Pista>().visible
             {
                 photobutton.SetActive(true);
             }
@@ -59,11 +60,12 @@ public class Photograph : MonoBehaviour
         {
             for (int i = 0; i < pistasVisiveis.Length; i++)
             {
-                if (pistasVisiveis[i].GetComponent<Pista>().visible && !pistasVisiveis[i].GetComponent<Pista>().fotografado)
+                if (!pistasVisiveis[i].GetComponent<Pista>().fotografado) // && pistasVisiveis[i].GetComponent<Pista>().visible
                 {
                     --relogio.actions;
                     cadernoPistas.GetComponent<CadernoPistas>().AtivaPista(pistasVisiveis[i].GetComponent<Pista>().codigoPista);
                     pistasVisiveis[i].GetComponent<Pista>().fotografado = true;
+                    notification.SetActive(true);
                     vfxFlash.SetTrigger("photo");
                     break;
                 }

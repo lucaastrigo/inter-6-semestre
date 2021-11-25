@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2c42660679eda8b41aab30835abcf920, type: 2}
   m_LightingSettings: {fileID: 1798873438}
 --- !u!196 &4
 NavMeshSettings:
@@ -2133,7 +2133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pista: {fileID: 0}
-  restos: {fileID: 6121574401596995669, guid: 99be097e2ef893e48bcedf56f268f662, type: 3}
 --- !u!4 &96965355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6280822119179547894, guid: 952b28cd484d82f4bb9b8b7ddca613af, type: 3}
@@ -13174,7 +13173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pista: {fileID: 0}
-  restos: {fileID: 6121574401596995669, guid: 99be097e2ef893e48bcedf56f268f662, type: 3}
 --- !u!136 &642307844
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26272,7 +26270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pista: {fileID: 0}
-  restos: {fileID: 6121574401596995669, guid: 99be097e2ef893e48bcedf56f268f662, type: 3}
 --- !u!136 &1302212615
 CapsuleCollider:
   m_ObjectHideFlags: 0

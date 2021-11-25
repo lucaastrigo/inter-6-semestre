@@ -71,13 +71,16 @@ public class PortaApartamento : MonoBehaviour
 
     public void EntrarApartamento()
     {
-        if (podeSair)
+        if(relogio.actions > 0)
         {
-            --relogio.actions;
+            if (podeSair)
+            {
+                --relogio.actions;
 
-            gato.position = dentro.position;
+                gato.position = dentro.position;
 
-            dentroApartamento = true;
+                dentroApartamento = true;
+            }
         }
     }
 }

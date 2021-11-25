@@ -8,11 +8,13 @@ public class PistaCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (!collision.gameObject.CompareTag("Player"))
+        if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Pista") && !collision.gameObject.CompareTag("Andar") && !collision.gameObject.CompareTag("Vizinho"))
         {
             //Instantiate(pista, transform.position, Quaternion.identity);
 
             //gambiarra
+            print(collision.name + " destruiu tudo");
+
             pista.SetActive(true);
 
             Destroy(gameObject.transform.parent.gameObject);

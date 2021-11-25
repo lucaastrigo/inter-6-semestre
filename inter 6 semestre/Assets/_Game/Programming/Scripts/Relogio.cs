@@ -13,15 +13,15 @@ public class Relogio : MonoBehaviour
 
     private void Start()
     {
-        actions = 4;
+        actions = 16;
     }
 
     private void Update()
     {
         //relogioPreenchido.fillAmount = (float)actions / 4f;
-        relogioPreenchido.fillAmount = 1 - (float)actions * 0.25f;
+        relogioPreenchido.fillAmount = 1 - (float)actions * 0.0625f; //era * 0.25f
 
-        float rotacaoSeta = -360 + (float)actions * 90;
+        float rotacaoSeta = -360 + (float)actions * 22.5f; //era * 90
         relogioSeta.eulerAngles = new Vector3(0, 0, rotacaoSeta);
     }
 

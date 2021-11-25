@@ -24,22 +24,38 @@ public class Cat : MonoBehaviour
         xMove = Input.GetAxis("Vertical");
         zMove = Input.GetAxis("Horizontal");
 
+        //.normalized
         rb.velocity = new Vector3(-xMove * speed * Time.deltaTime, rb.velocity.y, zMove * speed * Time.deltaTime);
+
+        if(rb.velocity.x != 0 || rb.velocity.z != 0)
+        {
+            anim.SetBool("walk", true);
+
+            float targetAngle = Mathf.Atan2(rb.velocity.x, rb.velocity.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, targetAngle, 0);
+        }
+        else if(rb.velocity.x == 0 && rb.velocity.z == 0)
+        {
+            anim.SetBool("walk", false);
+        }
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
-            Jump();
+            StartCoroutine(Jump());
         }
     }
 
-    void Jump()
+    IEnumerator Jump()
     {
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Force);
-
+        anim.SetTrigger("jump");
         canJump = false;
+
+        yield return new WaitForSeconds(0.25f);
+
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Force);
     }
 
     private void OnCollisionEnter(Collision collision)
