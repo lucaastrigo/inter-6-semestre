@@ -32520,7 +32520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "O jogador possui\n4 pontos de a\xE7\xE3o\nA\xE7\xF5es dispon\xEDveis:"
+  m_text: "O jogador possui\n16 pontos de a\xE7\xE3o\nA\xE7\xF5es dispon\xEDveis:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 72c96d684c4d15f4f93eae8772c417bc, type: 2}
   m_sharedMaterial: {fileID: -5330916975629708892, guid: 72c96d684c4d15f4f93eae8772c417bc, type: 2}

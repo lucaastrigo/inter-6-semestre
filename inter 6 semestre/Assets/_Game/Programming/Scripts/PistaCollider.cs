@@ -15,7 +15,10 @@ public class PistaCollider : MonoBehaviour
             //gambiarra
             print(collision.name + " destruiu tudo");
 
-            pista.SetActive(true);
+            if(pista != null)
+            {
+                pista.SetActive(true);
+            }
 
             Destroy(gameObject.transform.parent.gameObject);
         }
