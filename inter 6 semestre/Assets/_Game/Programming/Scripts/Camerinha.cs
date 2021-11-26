@@ -27,13 +27,13 @@ public class Camerinha : MonoBehaviour
                 switch (gato.GetComponent<Cat>().andarAtual)
                 {
                     case 0:
-                        gatoPos.y = 2.25f;
+                        gatoPos.y = 1.61f;
                         break;
                     case 1:
-                        gatoPos.y = 4.62f;
+                        gatoPos.y = 4.06f;
                         break;
                     case 2:
-                        gatoPos.y = 7;
+                        gatoPos.y = 6.51f;
                         break;
                 }
             }
