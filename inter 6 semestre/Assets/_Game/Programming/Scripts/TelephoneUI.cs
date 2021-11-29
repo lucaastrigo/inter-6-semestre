@@ -23,7 +23,7 @@ public class TelephoneUI : MonoBehaviour
             {
                 if (neighbors[i].GetComponent<Neighbor>().neighborCode == code)
                 {
-                    neighbors[i].GetComponent<Neighbor>().anim.SetTrigger("telephone");
+                    neighbors[i].GetComponent<Neighbor>().AwayFromHome();
                 }
             }
         }
