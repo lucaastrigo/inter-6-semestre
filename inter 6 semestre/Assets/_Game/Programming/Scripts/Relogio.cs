@@ -48,6 +48,19 @@ public class Relogio : MonoBehaviour
         }
     }
 
+    public void Finito()
+    {
+        for (int i = 0; i < finalDesligado.Length; i++)
+        {
+            finalDesligado[i].SetActive(false);
+        }
+
+        for (int i = 0; i < finalLigado.Length; i++)
+        {
+            finalLigado[i].SetActive(true);
+        }
+    }
+
     public void Agradece()
     {
         agradecimentos.SetActive(true);
